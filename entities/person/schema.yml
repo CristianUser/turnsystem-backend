@@ -1,0 +1,7 @@
+_schema:
+  name:
+    first:
+      type: String
+      default: John
+    last: String
+  likes: [String]

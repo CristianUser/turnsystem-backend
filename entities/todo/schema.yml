@@ -1,0 +1,9 @@
+_schema:
+  content:
+    type: String
+    required: content must be required
+  status:
+    type: String
+    default: undone
+_options:
+  timestamps: true

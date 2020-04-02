@@ -1,0 +1,9 @@
+_schema:
+  name: String
+  personal_id: String
+  province: String
+  cellphone: String
+  source: String
+  pending: Boolean
+_options:
+  timestamps: true
