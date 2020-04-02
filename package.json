@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src -d dist --source-maps",
-    "start": "nodemon app/index.js --exec babel-node",
-    "serve": "node dist/index.js",
+    "start": "node dist/app/index.js",
+    "start:dev": "nodemon src/app/index.js --exec babel-node",
+    "serve": "node dist/app/index.js",
     "clean": "rimraf dist",
     "lint": "eslint .",
     "test": "jest"
@@ -14,7 +15,7 @@
   "author": "cristianuser",
   "license": "ISC",
   "dependencies": {
-    "agradon": "0.1.0",
+    "agradon": "0.1.1",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
