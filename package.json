@@ -4,11 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel src -d dist --source-maps",
-    "start": "node dist/app/index.js",
+    "start": "nodemon src/app/index.js --exec babel-node",
     "start:dev": "nodemon src/app/index.js --exec babel-node",
-    "serve": "node dist/app/index.js",
-    "clean": "rimraf dist",
     "lint": "eslint .",
     "test": "jest"
   },
