@@ -1,3 +1,3 @@
-export const schema = schema => {
+module.exports.schema = schema => {
   return schema;
 };

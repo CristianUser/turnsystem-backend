@@ -1,6 +1,6 @@
 require('dotenv').config();
-import express from 'express';
-import * as agradon from 'agradon';
+const express = require('express');
+const agradon = require('agradon');
 
 const app = express();
 
@@ -20,4 +20,4 @@ app.use('**', (req, res) => {
 
 app.listen(process.env.PORT, () => console.log(`Server is listening on port ${process.env.PORT}`));
 
-export default app;
+module.exports = app;
