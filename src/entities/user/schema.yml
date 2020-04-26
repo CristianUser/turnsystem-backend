@@ -6,5 +6,6 @@ _schema:
   password:
     type: String
     required: true
+  saltSecret: String
 _options:
   timestamps: true
