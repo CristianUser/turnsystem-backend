@@ -1,5 +1,8 @@
 _schema:
+  name: String
+  lastname: String
   username: String
+  idCard: String
   email:
     type: String
     required: true
