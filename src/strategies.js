@@ -16,7 +16,7 @@ const localStrategy = new LocalStrategy(
           return cb(null, false, { message: 'Incorrect email.' });
         }
 
-        if (!bcrypt.compare(password, user.password)) {
+        if (!bcrypt.compareSync(password, user.password)) {
           return cb(null, false, { message: 'Incorrect password.' });
         }
 
